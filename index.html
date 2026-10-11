@@ -174,6 +174,15 @@ window.CATALOG_FALLBACK = [{"id":"guante-rinat","name":"Guantes Rinat Kancerbero
   .price small{display:block;font-weight:500;font-size:0.68rem;color:var(--ink-soft);}
   .add-btn{background:var(--volt);color:#12130F;border:none;border-radius:4px;padding:9px 14px;font-size:0.8rem;font-weight:800;cursor:pointer;}
   .add-btn:hover{background:var(--volt-dark);}
+  /* Celular: botón Agregar grande, ancho completo y fácil de tocar con el pulgar */
+  @media (max-width:640px){
+    .card-body{padding:12px;}
+    .card-foot{flex-direction:column;align-items:stretch;gap:10px;margin-top:6px;}
+    .card-foot .price{font-size:1.1rem;}
+    .card-foot .add-btn{width:100%;min-height:48px;padding:12px 10px;font-size:0.95rem;border-radius:8px;box-shadow:0 2px 0 var(--volt-dark);}
+    .card-foot .add-btn:active{transform:translateY(1px);box-shadow:none;}
+    .card-foot .add-btn:disabled{box-shadow:none;}
+  }
   .stock-tag{font-size:0.68rem;color:#7FB84A;}
   .stock-tag.low{color:var(--danger);}
 
